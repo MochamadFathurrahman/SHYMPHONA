@@ -1,0 +1,1013 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffdf8;
+    color: #17151c;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+header {
+    width: 100%;
+    background: #fffdf8;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #8b5cf6;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #17151c;
+}
+
+
+/* ========================================
+   HERO
+   ======================================== */
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 520px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title,
+.section-label {
+    color: #8b5cf6;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 90px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span,
+.page-header h1 span {
+    color: #8b5cf6;
+}
+
+.hero-text > p:not(.small-title) {
+    color: #77727f;
+    font-size: 18px;
+    max-width: 500px;
+    margin-bottom: 35px;
+}
+
+.main-button {
+    display: inline-block;
+
+    background: #8b5cf6;
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+
+/* ========================================
+   HERO ICON
+   ======================================== */
+
+.hero-icon {
+    width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-icon img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* ========================================
+   HOMEPAGE RECOMMENDATION
+   ======================================== */
+
+.recommendation {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto 100px;
+}
+
+.recommendation h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #77727f;
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   HOME LISTS
+   ======================================== */
+
+.home-lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.home-list {
+    background: #f4efff;
+
+    border: 1px solid #e4d8ff;
+
+    border-radius: 18px;
+
+    padding: 25px;
+}
+
+.home-list > h3 {
+    font-size: 25px;
+    margin-bottom: 18px;
+    color: #5b21b6;
+}
+
+
+/* ========================================
+   SONG CARD
+   ======================================== */
+
+.song-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.song-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e2ef;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.song-card:hover {
+    transform: translateY(-3px);
+    border-color: #8b5cf6;
+}
+
+
+/* ========================================
+   RANK
+   ======================================== */
+
+.rank {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8b5cf6;
+    width: 45px;
+}
+
+
+/* ========================================
+   SONG INFO
+   ======================================== */
+
+.song-info {
+    flex: 1;
+}
+
+.song-info h3,
+.ranking-item h3 {
+    color: #d69e00;
+    font-size: 17px;
+}
+
+.song-info p {
+    color: #6f6978;
+}
+
+
+/* ========================================
+   SONG LINKS
+   ======================================== */
+
+.song-links {
+    display: flex;
+    gap: 10px;
+}
+
+.song-links a {
+    border: 1px solid #d8cfe4;
+
+    padding: 7px 12px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+
+    color: #665d70;
+
+    transition: 0.3s;
+}
+
+.song-links a:hover {
+    color: #5b21b6;
+    border-color: #8b5cf6;
+}
+
+
+/* ========================================
+   PAGE HEADER
+   ======================================== */
+
+.page-header {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 90px auto 50px;
+}
+
+.page-header h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.page-header > p:last-child {
+    color: #77727f;
+    font-size: 17px;
+}
+
+
+/* ========================================
+   GENRE MENU
+   ======================================== */
+
+.genre-menu {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto 60px;
+
+    display: flex;
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.genre-menu a {
+    padding: 10px 20px;
+
+    border: 1px solid #d8cfe4;
+
+    border-radius: 30px;
+
+    color: #665d70;
+
+    transition: 0.3s;
+}
+
+.genre-menu a:hover {
+    background: #8b5cf6;
+
+    border-color: #8b5cf6;
+
+    color: white;
+}
+
+
+/* ========================================
+   GENRE SECTION
+   ======================================== */
+
+.genre-section {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto 80px;
+}
+
+
+/* ========================================
+   GENRE TITLE
+   ======================================== */
+
+.genre-title {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.genre-title > span {
+    font-size: 35px;
+}
+
+.genre-title h2 {
+    font-size: 30px;
+}
+
+.genre-title p {
+    color: #77727f;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   GENRE DESCRIPTION
+   ======================================== */
+
+.genre-description {
+    background: #f4efff;
+
+    border-left: 3px solid #8b5cf6;
+
+    padding: 15px 20px;
+
+    margin-bottom: 25px;
+
+    border-radius: 0 8px 8px 0;
+}
+
+.genre-description p {
+    color: #6f6978;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   RANKING NOTE
+   ======================================== */
+
+.ranking-note {
+    max-width: 750px;
+
+    margin: 30px auto 0;
+
+    padding: 20px 25px;
+
+    border: 1px solid #e4d8ff;
+
+    border-left: 3px solid #8b5cf6;
+
+    border-radius: 0 10px 10px 0;
+
+    background: #f4efff;
+
+    text-align: left;
+}
+
+.ranking-note strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #4c1d95;
+}
+
+.ranking-note p {
+    margin: 0;
+
+    color: #6f6978;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   RANKING SUBTITLE
+   ======================================== */
+
+.ranking-subtitle {
+    display: inline-block;
+
+    margin: 5px 0 12px;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #fff1a8;
+
+    color: #5d4b00;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   RANKING LIST
+   ======================================== */
+
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   RANKING ITEM
+   ======================================== */
+
+.ranking-item {
+    display: grid;
+
+    grid-template-columns:
+        60px
+        1fr
+        130px
+        auto;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e2ef;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.ranking-item:hover {
+    border-color: #8b5cf6;
+
+    transform: translateX(5px);
+}
+
+
+/* ========================================
+   RANKING NUMBER
+   ======================================== */
+
+.ranking-item strong {
+    font-size: 18px;
+    color: #8b5cf6;
+}
+
+
+/* ========================================
+   RANKING SONG
+   ======================================== */
+
+.ranking-item h3 {
+    font-size: 16px;
+}
+
+.ranking-item p {
+    color: #77727f;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   STATUS
+   ======================================== */
+
+.ranking-item > span {
+    font-size: 12px;
+    color: #77727f;
+}
+
+
+/* ========================================
+   RANKING PLATFORM LINKS
+   ======================================== */
+
+.ranking-item .song-links {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.ranking-item .song-links a {
+    display: inline-block;
+
+    padding: 7px 11px;
+
+    border: 1px solid #d8cfe4;
+
+    border-radius: 6px;
+
+    color: #665d70;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.ranking-item .song-links a:hover {
+    color: #5b21b6;
+
+    border-color: #8b5cf6;
+
+    background: #f4efff;
+}
+
+
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
+.about-section {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* ========================================
+   ABOUT CARD
+   ======================================== */
+
+.about-card {
+    text-align: center;
+
+    padding: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #f4efff,
+        #fff4d6
+    );
+
+    border: 1px solid #e4d8ff;
+
+    border-radius: 20px;
+
+    margin-bottom: 80px;
+
+    box-shadow:
+        0 10px 30px rgba(91, 33, 182, 0.08);
+}
+
+.about-icon {
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+.about-card h2 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+    color: #4c1d95;
+}
+
+.about-card p {
+    max-width: 650px;
+
+    margin: 10px auto;
+
+    color: #625c69;
+}
+
+
+/* ========================================
+   ABOUT FEATURES
+   ======================================== */
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features > h2 {
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   FEATURE GRID
+   ======================================== */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+/* ========================================
+   FEATURE CARD
+   ======================================== */
+
+.feature-card {
+    background: #ffffff;
+
+    border: 1px solid #e8e2ef;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+
+/* Different backgrounds */
+
+.feature-card:nth-child(1) {
+    background: #fff5d9;
+    border-color: #f2d98b;
+}
+
+.feature-card:nth-child(2) {
+    background: #f2edff;
+    border-color: #d9caff;
+}
+
+.feature-card:nth-child(3) {
+    background: #eaf9f4;
+    border-color: #c6e9dc;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #8b5cf6;
+}
+
+
+/* ========================================
+   FEATURE ICON
+   ======================================== */
+
+.feature-icon {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   FEATURE TEXT
+   ======================================== */
+
+.feature-card h3 {
+    margin-bottom: 10px;
+
+    color: #4c1d95;
+}
+
+.feature-card p {
+    color: #6f6978;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   MISSION
+   ======================================== */
+
+.mission {
+    padding: 60px 0;
+
+    margin-bottom: 50px;
+}
+
+.mission h2 {
+    font-size: 45px;
+
+    line-height: 1.2;
+
+    color: #4c1d95;
+}
+
+
+/* ========================================
+   TEAM
+   ======================================== */
+
+.team {
+    margin-bottom: 100px;
+}
+
+.team h2 {
+    margin-bottom: 25px;
+}
+
+.team-members {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+/* ========================================
+   MEMBER CARD
+   ======================================== */
+
+.member {
+    flex: 1;
+
+    background: #f4efff;
+
+    border: 1px solid #e4d8ff;
+
+    border-radius: 15px;
+
+    padding: 30px;
+}
+
+
+/* ========================================
+   MEMBER ICON
+   ======================================== */
+
+.member-icon {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.member h3 {
+    color: #4c1d95;
+}
+
+.member p {
+    color: #77727f;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    border-top: 1px solid #e8e2ef;
+
+    color: #77727f;
+
+    font-size: 13px;
+}
+
+
+/* ========================================
+   RESPONSIVE / TABLET
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        justify-content: center;
+
+        gap: 40px;
+
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero-icon {
+        width: 220px;
+    }
+
+
+    /* HOMEPAGE LIST */
+
+    .home-lists {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* SONG CARD */
+
+    .song-card {
+        flex-wrap: wrap;
+    }
+
+    .song-info {
+        min-width: 200px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header h1 {
+        font-size: 45px;
+    }
+
+
+    /* RANKING */
+
+    .ranking-item {
+        grid-template-columns: 45px 1fr;
+    }
+
+    .ranking-item > span {
+        grid-column: 2;
+    }
+
+    .ranking-item .song-links {
+        grid-column: 2;
+
+        justify-content: flex-start;
+    }
+
+
+    /* FEATURES */
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* TEAM */
+
+    .team-members {
+        flex-direction: column;
+    }
+
+
+    /* GENRE TITLE */
+
+    .genre-title h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   ======================================== */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .page-header h1 {
+        font-size: 38px;
+    }
+
+    .recommendation h2 {
+        font-size: 30px;
+    }
+
+    .song-card {
+        gap: 12px;
+    }
+
+    .song-links {
+        width: 100%;
+    }
+
+    .song-links a {
+        flex: 1;
+
+        text-align: center;
+    }
+
+    .ranking-item .song-links {
+        width: 100%;
+    }
+
+    .ranking-item .song-links a {
+        flex: 1;
+        text-align: center;
+    }
+
+    .genre-menu a {
+        padding: 8px 14px;
+
+        font-size: 13px;
+    }
+
+    .genre-description {
+        padding: 12px 15px;
+    }
+
+    .mission h2 {
+        font-size: 35px;
+    }
+
+    .about-card {
+        padding: 30px 20px;
+    }
+
+}
