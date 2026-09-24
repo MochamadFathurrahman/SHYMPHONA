@@ -30,6 +30,10 @@ header {
     background: #fffdf8;
 }
 
+.navbar, .hero, .song-card, .genre-menu, .team-members {
+    display: flex;
+}
+
 .navbar {
     width: 90%;
     max-width: 1200px;
