@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎧 SHYMPHONA - Home</title>
+    <title>SHYMPHONA - Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -12,31 +13,25 @@
 <header style="position: sticky; top: 0; z-index: 50; background-color: rgb(255, 255, 255); backdrop-filter: blur(8px); border-bottom: 1px solid  #8b5cf6;">
     <nav style="max-width: 1150px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between;">
 
-        <!-- Logo -->
         <a href="index.html" style="font-weight: bold; font-size: 1.25rem; letter-spacing: 0.05em; display: flex; align-items: center; gap: 8px; color:  #8b5cf6; text-decoration: none;">
-            🎧 SHYMPHONA
+        SHYMPHONA
         </a>
 
-        <!-- Desktop Nav Links -->
         <div id="desktop-menu" style="display: flex; align-items: center; gap: 24px; font-weight: 500;">
-            <a href="index.html" style="color:  #8b5cf6; font-weight: 600; text-decoration: none;">Home</a>
+            <a href="index.html" style="color:  #94a3b8; font-weight: 600; text-decoration: none;">Home</a>
             <a href="ranking.html" style="color: #94a3b8; text-decoration: none;">Ranking</a>
             <a href="about.html" style="color: #94a3b8; text-decoration: none;">About</a>
         </div>
 
-        <!-- Mobile Menu Container (Wrapper untuk Tombol & Dropdown Box) -->
         <div id="mobile-menu-container" style="display: none; position: relative;">
-            
-            <!-- Hamburger Button -->
             <button id="menu-btn" style="background: none; border: none; color: #cbd5e1; cursor: pointer; padding: 4px; display: flex; align-items: center;">
                 <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
 
-            <!-- Small Floating Dropdown Menu (Kecil di Pojok Kanan Bawah Ikon) -->
             <div id="mobile-menu" style="display: none; position: absolute; right: 0; top: calc(100% + 12px); background-color: #ffffff; border: 1px solid #1e293b; border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5); padding: 12px 16px; flex-direction: column; gap: 10px; min-width: 140px; z-index: 100; font-weight: 500;">
-                <a href="index.html" style="color:  #8b5cf6; font-weight: 600; text-decoration: none; font-size: 0.95rem; padding: 4px 0;">Home</a>
+                <a href="index.html" style="color: #94a3b8; font-weight: 600; text-decoration: none; font-size: 0.95rem; padding: 4px 0;">Home</a>
                 <a href="ranking.html" style="color: #94a3b8; text-decoration: none; font-size: 0.95rem; padding: 4px 0;">Ranking</a>
                 <a href="about.html" style="color: #94a3b8; text-decoration: none; font-size: 0.95rem; padding: 4px 0;">About</a>
             </div>
@@ -46,18 +41,7 @@
     </nav>
 </header>
 
-<!-- CSS Pengaman Khusus Navbar -->
-<style>
-    @media (max-width: 768px) {
-        #desktop-menu { display: none !important; }
-        #mobile-menu-container { display: block !important; }
-    }
-    @media (min-width: 769px) {
-        #mobile-menu-container { display: none !important; }
-    }
-</style>
 
-<!-- Script untuk Toggle Menu & Tutup Otomatis saat Klik di Luar -->
 <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
@@ -67,7 +51,6 @@
         menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
     });
 
-    // Menutup dropdown otomatis jika pengguna mengklik area lain di layar
     document.addEventListener('click', () => {
         if (menu.style.display === 'flex') {
             menu.style.display = 'none';
@@ -75,20 +58,6 @@
     });
 </script>
 
-<!-- CSS Pengaman Khusus Navbar -->
-<style>
-    @media (max-width: 768px) {
-        #desktop-menu { display: none !important; }
-        #menu-btn { display: block !important; }
-    }
-    @media (min-width: 769px) {
-        #mobile-menu { display: none !important; }
-    }
-</style>
-
-
-
-<!-- HERO -->
 <section class="hero">
 
     <div class="hero-text">
@@ -114,219 +83,91 @@
 </section>
 
 
-<!-- RECOMMENDATIONS -->
-<section class="recommendation">
+<section class="w-[90%] max-w-[1200px] mx-auto mt-[60px] mb-[100px]">
 
-    <p class="section-label">THIS WEEK'S PICKS</p>
+    <p class="text-[13px] font-bold tracking-[3px] text-[#8b5cf6] mb-3">THIS WEEK'S PICKS</p>
+    <h2 class="text-[40px] font-bold leading-tight mb-2.5">Top Recommendations</h2>
+    <p class="text-[#77727f] mb-9">A curated selection of songs recommended by SHYMPHONA.</p>
 
-    <h2>Top Recommendations</h2>
+    <div class="flex flex-col md:flex-row gap-7">
 
-    <p class="section-description">
-        A curated selection of songs recommended by SHYMPHONA.
-    </p>
-
-
-    <div class="home-lists">
-
-        <!-- INTERNATIONAL -->
-        <div class="home-list">
-
-            <h3>International</h3>
-
-            <div class="song-card">
-
-                <div class="rank">
-                    #01
+        <div class="flex-1 flex flex-col gap-4 bg-[#f4efff] border border-[#e4d8ff] rounded-[18px] p-6">
+            <h3 class="text-2xl font-bold text-[#5b21b6]">International</h3>
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-5 p-5 bg-white border border-[#e8e2ef] rounded-xl transition duration-300 hover:-translate-y-1 hover:border-[#8b5cf6]">
+                <div class="w-11 text-xl font-bold text-[#8b5cf6]">#01</div>
+                <div class="flex-1 min-w-[160px]">
+                    <h4 class="text-[17px] font-semibold text-[#d69e00]">Golden</h4>
+                    <p class="text-[#6f6978]">HUNTR/X</p>
                 </div>
-
-                <div class="song-info">
-                    <h3>Golden</h3>
-                    <p>HUNTR/X</p>
+                <div class="flex gap-2.5 w-full sm:w-auto">
+                    <a href="https://open.spotify.com/search/Golden%20HUNTR%2FX" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">Spotify</a>
+                    <a href="https://youtu.be/yebNIHKAC4A?si=ItGDML8tUplcaMlx" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">YouTube</a>
                 </div>
-
-                <div class="song-links">
-
-                    <a href="https://open.spotify.com/search/Golden%20HUNTR%2FX"
-                       target="_blank"
-                       rel="noopener">
-                        Spotify
-                    </a>
-
-                    <a href="https://youtu.be/yebNIHKAC4A?si=ItGDML8tUplcaMlx"
-                       target="_blank"
-                       rel="noopener">
-                        YouTube
-                    </a>
-
-                </div>
-
             </div>
-
-
-            <div class="song-card">
-
-                <div class="rank">
-                    #02
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-5 p-5 bg-white border border-[#e8e2ef] rounded-xl transition duration-300 hover:-translate-y-1 hover:border-[#8b5cf6]">
+                <div class="w-11 text-xl font-bold text-[#8b5cf6]">#02</div>
+                <div class="flex-1 min-w-[160px]">
+                    <h4 class="text-[17px] font-semibold text-[#d69e00]">The Cure</h4>
+                    <p class="text-[#6f6978]">Olivia Rodrigo</p>
                 </div>
-
-                <div class="song-info">
-                    <h3>The Cure</h3>
-                    <p>Olivia Rodrigo</p>
+                <div class="flex gap-2.5 w-full sm:w-auto">
+                    <a href="https://open.spotify.com/search/The%20Cure%20Olivia%20Rodrigo" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">Spotify</a>
+                    <a href="https://youtu.be/B402rKl4bUg?si=vDep5Badtuy7V6yI" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">YouTube</a>
                 </div>
-
-                <div class="song-links">
-
-                    <a href="https://open.spotify.com/search/The%20Cure%20Olivia%20Rodrigo"
-                       target="_blank"
-                       rel="noopener">
-                        Spotify
-                    </a>
-
-                    <a href="https://youtu.be/B402rKl4bUg?si=vDep5Badtuy7V6yI"
-                       target="_blank"
-                       rel="noopener">
-                        YouTube
-                    </a>
-
-                </div>
-
             </div>
-
-
-            <div class="song-card">
-
-                <div class="rank">
-                    #03
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-5 p-5 bg-white border border-[#e8e2ef] rounded-xl transition duration-300 hover:-translate-y-1 hover:border-[#8b5cf6]">
+                <div class="w-11 text-xl font-bold text-[#8b5cf6]">#03</div>
+                <div class="flex-1 min-w-[160px]">
+                    <h4 class="text-[17px] font-semibold text-[#d69e00]">Self Control</h4>
+                    <p class="text-[#6f6978]">Frank Ocean</p>
                 </div>
-
-                <div class="song-info">
-                    <h3>Self Control</h3>
-                    <p>Frank Ocean</p>
+                <div class="flex gap-2.5 w-full sm:w-auto">
+                    <a href="https://open.spotify.com/search/Self%20Control%20Frank%20Ocean" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">Spotify</a>
+                    <a href="https://youtu.be/BME88lS6aVY?si=6cENw0PKJUsnQtUz" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">YouTube</a>
                 </div>
-
-                <div class="song-links">
-
-                    <a href="https://open.spotify.com/search/Self%20Control%20Frank%20Ocean"
-                       target="_blank"
-                       rel="noopener">
-                        Spotify
-                    </a>
-
-                    <a href="https://youtu.be/BME88lS6aVY?si=6cENw0PKJUsnQtUz"
-                       target="_blank"
-                       rel="noopener">
-                        YouTube
-                    </a>
-
-                </div>
-
             </div>
-
         </div>
 
-
-        <!-- LOCAL -->
-        <div class="home-list">
-
-            <h3>Local</h3>
-
-            <div class="song-card">
-
-                <div class="rank">
-                    #01
+        <div class="flex-1 flex flex-col gap-4 bg-[#f4efff] border border-[#e4d8ff] rounded-[18px] p-6">
+            <h3 class="text-2xl font-bold text-[#5b21b6]">Local</h3>
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-5 p-5 bg-white border border-[#e8e2ef] rounded-xl transition duration-300 hover:-translate-y-1 hover:border-[#8b5cf6]">
+                <div class="w-11 text-xl font-bold text-[#8b5cf6]">#01</div>
+                <div class="flex-1 min-w-[160px]">
+                    <h4 class="text-[17px] font-semibold text-[#d69e00]">Teh Hijau</h4>
+                    <p class="text-[#6f6978]">Tulus</p>
                 </div>
-
-                <div class="song-info">
-                    <h3>Teh Hijau</h3>
-                    <p>Tulus</p>
+                <div class="flex gap-2.5 w-full sm:w-auto">
+                    <a href="https://open.spotify.com/search/Teh%20Hijau%20Tulus" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">Spotify</a>
+                    <a href="https://youtu.be/zyLmavBAY7k?si=GQTV4264eEAh_5-H" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">YouTube</a>
                 </div>
-
-                <div class="song-links">
-
-                    <a href="https://open.spotify.com/search/Teh%20Hijau%20Tulus"
-                       target="_blank"
-                       rel="noopener">
-                        Spotify
-                    </a>
-
-                    <a href="https://youtu.be/zyLmavBAY7k?si=GQTV4264eEAh_5-H"
-                       target="_blank"
-                       rel="noopener">
-                        YouTube
-                    </a>
-
-                </div>
-
             </div>
-
-
-            <div class="song-card">
-
-                <div class="rank">
-                    #02
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-5 p-5 bg-white border border-[#e8e2ef] rounded-xl transition duration-300 hover:-translate-y-1 hover:border-[#8b5cf6]">
+                <div class="w-11 text-xl font-bold text-[#8b5cf6]">#02</div>
+                <div class="flex-1 min-w-[160px]">
+                    <h4 class="text-[17px] font-semibold text-[#d69e00]">Titik Nadir</h4>
+                    <p class="text-[#6f6978]">Kahitna, Monita Tahalea</p>
                 </div>
-
-                <div class="song-info">
-                    <h3>Kematian, Jika Aku Jadi Kekasihnya</h3>
-                    <p>Nadin Amizah</p>
+                <div class="flex gap-2.5 w-full sm:w-auto">
+                    <a href="https://open.spotify.com/intl-id/track/52m690jqpxP1tHHkRNdl5p?si=85c5bb6f48274285" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">Spotify</a>
+                    <a href="https://youtu.be/OQNu-iB2tE8?si=4hdHJmdT5UFWP-5q" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">YouTube</a>
                 </div>
-
-                <div class="song-links">
-
-                    <a href="https://open.spotify.com/search/Kematian%20Jika%20Aku%20Jadi%20Kekasihnya%20Nadin%20Amizah"
-                       target="_blank"
-                       rel="noopener">
-                        Spotify
-                    </a>
-
-                    <a href="https://youtu.be/zS6-6KM-JQA?si=wQIbw5ftvpZaNgLH"
-                       target="_blank"
-                       rel="noopener">
-                        YouTube
-                    </a>
-
-                </div>
-
             </div>
-
-
-            <div class="song-card">
-
-                <div class="rank">
-                    #03
+            <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-5 p-5 bg-white border border-[#e8e2ef] rounded-xl transition duration-300 hover:-translate-y-1 hover:border-[#8b5cf6]">
+                <div class="w-11 text-xl font-bold text-[#8b5cf6]">#03</div>
+                <div class="flex-1 min-w-[160px]">
+                    <h4 class="text-[17px] font-semibold text-[#d69e00]">Kota Ini Tak Sama Tanpamu</h4>
+                    <p class="text-[#6f6978]">Nadhif Basalamah</p>
                 </div>
-
-                <div class="song-info">
-                    <h3>Kota Ini Tak Sama Tanpamu</h3>
-                    <p>Nadhif Basalamah</p>
+                <div class="flex gap-2.5 w-full sm:w-auto">
+                    <a href="https://open.spotify.com/search/Kota%20Ini%20Tak%20Sama%20Tanpamu%20Nadhif%20Basalamah" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">Spotify</a>
+                    <a href="https://youtu.be/grp6FCnioMM?si=bxtvowbjJqfea-LM" target="_blank" rel="noopener" class="flex-1 sm:flex-none text-center border border-[#d8cfe4] px-3 py-1.5 rounded-md text-xs text-[#665d70] transition duration-300 hover:text-[#5b21b6] hover:border-[#8b5cf6]">YouTube</a>
                 </div>
-
-                <div class="song-links">
-
-                    <a href="https://open.spotify.com/search/Kota%20Ini%20Tak%20Sama%20Tanpamu%20Nadhif%20Basalamah"
-                       target="_blank"
-                       rel="noopener">
-                        Spotify
-                    </a>
-
-                    <a href="https://youtu.be/grp6FCnioMM?si=bxtvowbjJqfea-LM"
-                       target="_blank"
-                       rel="noopener">
-                        YouTube
-                    </a>
-
-                </div>
-
             </div>
-
         </div>
 
     </div>
 
 </section>
-
-
-<!-- FOOTER -->
 <footer>
 
     <p>
