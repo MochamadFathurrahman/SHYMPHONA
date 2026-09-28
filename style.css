@@ -21,9 +21,6 @@ a {
 }
 
 
-/* ========================================
-   NAVBAR
-   ======================================== */
 
 header {
     width: 100%;
@@ -67,10 +64,6 @@ header {
     color: #17151c;
 }
 
-
-/* ========================================
-   HERO
-   ======================================== */
 
 .hero {
     width: 90%;
@@ -135,9 +128,6 @@ header {
 }
 
 
-/* ========================================
-   HERO ICON
-   ======================================== */
 
 .hero-icon {
     width: 300px;
@@ -155,10 +145,6 @@ header {
 }
 
 
-/* ========================================
-   HOMEPAGE RECOMMENDATION
-   ======================================== */
-
 .recommendation {
     width: 90%;
     max-width: 1200px;
@@ -174,11 +160,6 @@ header {
     color: #77727f;
     margin-bottom: 35px;
 }
-
-
-/* ========================================
-   HOME LISTS
-   ======================================== */
 
 .home-lists {
     display: grid;
@@ -202,10 +183,6 @@ header {
     color: #5b21b6;
 }
 
-
-/* ========================================
-   SONG CARD
-   ======================================== */
 
 .song-container {
     display: flex;
@@ -235,10 +212,6 @@ header {
 }
 
 
-/* ========================================
-   RANK
-   ======================================== */
-
 .rank {
     font-size: 20px;
     font-weight: bold;
@@ -246,10 +219,6 @@ header {
     width: 45px;
 }
 
-
-/* ========================================
-   SONG INFO
-   ======================================== */
 
 .song-info {
     flex: 1;
@@ -265,10 +234,6 @@ header {
     color: #6f6978;
 }
 
-
-/* ========================================
-   SONG LINKS
-   ======================================== */
 
 .song-links {
     display: flex;
@@ -295,10 +260,6 @@ header {
 }
 
 
-/* ========================================
-   PAGE HEADER
-   ======================================== */
-
 .page-header {
     width: 90%;
     max-width: 1000px;
@@ -316,10 +277,6 @@ header {
     font-size: 17px;
 }
 
-
-/* ========================================
-   GENRE MENU
-   ======================================== */
 
 .genre-menu {
     width: 90%;
@@ -354,9 +311,6 @@ header {
 }
 
 
-/* ========================================
-   GENRE SECTION
-   ======================================== */
 
 .genre-section {
     width: 90%;
@@ -364,11 +318,6 @@ header {
 
     margin: 0 auto 80px;
 }
-
-
-/* ========================================
-   GENRE TITLE
-   ======================================== */
 
 .genre-title {
     display: flex;
@@ -393,10 +342,6 @@ header {
 }
 
 
-/* ========================================
-   GENRE DESCRIPTION
-   ======================================== */
-
 .genre-description {
     background: #f4efff;
 
@@ -413,11 +358,6 @@ header {
     color: #6f6978;
     font-size: 14px;
 }
-
-
-/* ========================================
-   RANKING NOTE
-   ======================================== */
 
 .ranking-note {
     max-width: 750px;
@@ -456,10 +396,6 @@ header {
 }
 
 
-/* ========================================
-   RANKING SUBTITLE
-   ======================================== */
-
 .ranking-subtitle {
     display: inline-block;
 
@@ -481,10 +417,6 @@ header {
 }
 
 
-/* ========================================
-   RANKING LIST
-   ======================================== */
-
 .ranking-list {
     display: flex;
     flex-direction: column;
@@ -494,10 +426,6 @@ header {
     margin-bottom: 28px;
 }
 
-
-/* ========================================
-   RANKING ITEM
-   ======================================== */
 
 .ranking-item {
     display: grid;
@@ -530,19 +458,12 @@ header {
 }
 
 
-/* ========================================
-   RANKING NUMBER
-   ======================================== */
 
 .ranking-item strong {
     font-size: 18px;
     color: #8b5cf6;
 }
 
-
-/* ========================================
-   RANKING SONG
-   ======================================== */
 
 .ranking-item h3 {
     font-size: 16px;
@@ -554,19 +475,11 @@ header {
 }
 
 
-/* ========================================
-   STATUS
-   ======================================== */
-
 .ranking-item > span {
     font-size: 12px;
     color: #77727f;
 }
 
-
-/* ========================================
-   RANKING PLATFORM LINKS
-   ======================================== */
 
 .ranking-item .song-links {
     display: flex;
@@ -599,10 +512,6 @@ header {
 }
 
 
-/* ========================================
-   ABOUT PAGE
-   ======================================== */
-
 .about-section {
     width: 90%;
     max-width: 1000px;
@@ -611,9 +520,6 @@ header {
 }
 
 
-/* ========================================
-   ABOUT CARD
-   ======================================== */
 
 .about-card {
     text-align: center;
@@ -658,11 +564,6 @@ header {
     color: #625c69;
 }
 
-
-/* ========================================
-   ABOUT FEATURES
-   ======================================== */
-
 .features {
     margin-bottom: 80px;
 }
@@ -674,10 +575,6 @@ header {
 }
 
 
-/* ========================================
-   FEATURE GRID
-   ======================================== */
-
 .feature-grid {
     display: grid;
 
@@ -686,11 +583,6 @@ header {
 
     gap: 15px;
 }
-
-
-/* ========================================
-   FEATURE CARD
-   ======================================== */
 
 .feature-card {
     background: #ffffff;
@@ -705,7 +597,6 @@ header {
 }
 
 
-/* Different backgrounds */
 
 .feature-card:nth-child(1) {
     background: #fff5d9;
@@ -729,20 +620,12 @@ header {
 }
 
 
-/* ========================================
-   FEATURE ICON
-   ======================================== */
-
 .feature-icon {
     font-size: 30px;
 
     margin-bottom: 15px;
 }
 
-
-/* ========================================
-   FEATURE TEXT
-   ======================================== */
 
 .feature-card h3 {
     margin-bottom: 10px;
@@ -755,11 +638,6 @@ header {
 
     font-size: 14px;
 }
-
-
-/* ========================================
-   MISSION
-   ======================================== */
 
 .mission {
     padding: 60px 0;
@@ -774,11 +652,6 @@ header {
 
     color: #4c1d95;
 }
-
-
-/* ========================================
-   TEAM
-   ======================================== */
 
 .team {
     margin-bottom: 100px;
@@ -795,10 +668,6 @@ header {
 }
 
 
-/* ========================================
-   MEMBER CARD
-   ======================================== */
-
 .member {
     flex: 1;
 
@@ -811,10 +680,6 @@ header {
     padding: 30px;
 }
 
-
-/* ========================================
-   MEMBER ICON
-   ======================================== */
 
 .member-icon {
     font-size: 35px;
@@ -831,9 +696,6 @@ header {
 }
 
 
-/* ========================================
-   FOOTER
-   ======================================== */
 
 footer {
     text-align: center;
@@ -848,13 +710,9 @@ footer {
 }
 
 
-/* ========================================
-   RESPONSIVE / TABLET
-   ======================================== */
 
 @media (max-width: 768px) {
 
-    /* NAVBAR */
 
     .navbar {
         flex-direction: column;
@@ -890,14 +748,12 @@ footer {
     }
 
 
-    /* HOMEPAGE LIST */
 
     .home-lists {
         grid-template-columns: 1fr;
     }
 
 
-    /* SONG CARD */
 
     .song-card {
         flex-wrap: wrap;
@@ -908,14 +764,12 @@ footer {
     }
 
 
-    /* PAGE HEADER */
 
     .page-header h1 {
         font-size: 45px;
     }
 
 
-    /* RANKING */
 
     .ranking-item {
         grid-template-columns: 45px 1fr;
@@ -932,14 +786,12 @@ footer {
     }
 
 
-    /* FEATURES */
 
     .feature-grid {
         grid-template-columns: 1fr;
     }
 
 
-    /* TEAM */
 
     .team-members {
         flex-direction: column;
@@ -1015,3 +867,18 @@ footer {
     }
 
 }
+  @media (max-width: 768px) {
+        #desktop-menu { display: none !important; }
+        #mobile-menu-container { display: block !important; }
+    }
+    @media (min-width: 769px) {
+        #mobile-menu-container { display: none !important; }
+    }
+
+      @media (max-width: 768px) {
+        #desktop-menu { display: none !important; }
+        #menu-btn { display: block !important; }
+    }
+    @media (min-width: 769px) {
+        #mobile-menu { display: none !important; }
+    }
