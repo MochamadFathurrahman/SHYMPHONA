@@ -2,52 +2,38 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>SHYMPHONA - About</title>
-
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 
 <body>
 
-
-
-
 <header style="position: sticky; top: 0; z-index: 50; background-color: rgb(255, 255, 255); backdrop-filter: blur(8px); border-bottom: 1px solid  #8b5cf6;">
     <nav style="max-width: 1150px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between;">
 
-        <!-- Logo -->
         <a href="index.html" style="font-weight: bold; font-size: 1.25rem; letter-spacing: 0.05em; display: flex; align-items: center; gap: 8px; color:  #8b5cf6; text-decoration: none;">
              SHYMPHONA
         </a>
 
-        <!-- Desktop Nav Links -->
         <div id="desktop-menu" style="display: flex; align-items: center; gap: 24px; font-weight: 500;">
-            <a href="index.html" style="color:  #8b5cf6; font-weight: 600; text-decoration: none;">Home</a>
+            <a href="index.html" style="color:  #94a3b8; font-weight: 600; text-decoration: none;">Home</a>
             <a href="ranking.html" style="color: #94a3b8; text-decoration: none;">Ranking</a>
             <a href="about.html" style="color: #94a3b8; text-decoration: none;">About</a>
         </div>
 
-        <!-- Mobile Menu Container (Wrapper untuk Tombol & Dropdown Box) -->
         <div id="mobile-menu-container" style="display: none; position: relative;">
-            
-            <!-- Hamburger Button -->
-            <button id="menu-btn" style="background: none; border: none; color: #cbd5e1; cursor: pointer; padding: 4px; display: flex; align-items: center;">
+                      <button id="menu-btn" style="background: none; border: none; color: #cbd5e1; cursor: pointer; padding: 4px; display: flex; align-items: center;">
                 <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
 
-            <!-- Small Floating Dropdown Menu (Kecil di Pojok Kanan Bawah Ikon) -->
             <div id="mobile-menu" style="display: none; position: absolute; right: 0; top: calc(100% + 12px); background-color: #ffffff; border: 1px solid #1e293b; border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5); padding: 12px 16px; flex-direction: column; gap: 10px; min-width: 140px; z-index: 100; font-weight: 500;">
-                <a href="index.html" style="color:  #8b5cf6; font-weight: 600; text-decoration: none; font-size: 0.95rem; padding: 4px 0;">Home</a>
+                <a href="index.html" style="color:  #94a3b8     ; font-weight: 600; text-decoration: none; font-size: 0.95rem; padding: 4px 0;">Home</a>
                 <a href="ranking.html" style="color: #94a3b8; text-decoration: none; font-size: 0.95rem; padding: 4px 0;">Ranking</a>
                 <a href="about.html" style="color: #94a3b8; text-decoration: none; font-size: 0.95rem; padding: 4px 0;">About</a>
             </div>
@@ -57,18 +43,7 @@
     </nav>
 </header>
 
-<!-- CSS Pengaman Khusus Navbar -->
-<style>
-    @media (max-width: 768px) {
-        #desktop-menu { display: none !important; }
-        #mobile-menu-container { display: block !important; }
-    }
-    @media (min-width: 769px) {
-        #mobile-menu-container { display: none !important; }
-    }
-</style>
 
-<!-- Script untuk Toggle Menu & Tutup Otomatis saat Klik di Luar -->
 <script>
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
@@ -78,24 +53,12 @@
         menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
     });
 
-    // Menutup dropdown otomatis jika pengguna mengklik area lain di layar
     document.addEventListener('click', () => {
         if (menu.style.display === 'flex') {
             menu.style.display = 'none';
         }
     });
 </script>
-
-<!-- CSS Pengaman Khusus Navbar -->
-<style>
-    @media (max-width: 768px) {
-        #desktop-menu { display: none !important; }
-        #menu-btn { display: block !important; }
-    }
-    @media (min-width: 769px) {
-        #mobile-menu { display: none !important; }
-    }
-</style>
 
 <section class="page-header">
 
@@ -124,10 +87,11 @@
             What is SHYMPHONA?
         </h2>
 
-        <p>
-            Bingung mau dengar lagu apa hari ini? SHYMPHONA siap menemani. Jelajahi berbagai genre, lihat lagu-lagu yang sedang populer, dan temukan rekomendasi musik yang sesuai dengan selera kamu. Karena terkadang, menemukan lagu favorit baru dimulai dari satu klik.
+        <p>Confused about what song to listen to today? SHYMPHONA is 
+            ready to accompany you. Explore various genres, check out trending tracks, 
+            and discover music recommendations that match your taste. Because sometimes, 
+            finding a new favorite song starts with just one click
         </p>
-
     </div>
 
     <div class="features">
@@ -147,7 +111,7 @@
                 </h3>
 
                 <p>
-                    Cekidot 5 lagu yang menjadi rekomendasi minggu ini dari kami!
+                    Top 6 Song's for you
                 </p>
 
             </div>
@@ -160,7 +124,7 @@
                 </h3>
 
                 <p>
-                    Explore peringkat lagu yang telah kami susun pada berbagai genre musik.
+                    Explore our curated song charts across various music genre                
                 </p>
 
             </div>
@@ -173,7 +137,7 @@
                 </h3>
 
                 <p>
-                    Kamu bisa langsung play dan mendengarkan musiknya dengan satu kali klik!
+                    You can instantly play and listen to the music with just one click!
                 </p>
 
             </div>
@@ -240,7 +204,6 @@
 
 
 </section>
-
 
 
 <footer>
